@@ -1,0 +1,87 @@
+/* Login Container */
+.login-container {
+    max-width: 400px;
+    width: 100%;
+    background: var(--container-bg-color);
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Title Styling */
+.login-title {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* Form Styling */
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Input Group Styling */
+.input-group {
+    display: flex;
+    align-items: center;
+    background: var(--input-bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.input-group .icon {
+    font-size: 1.2rem;
+    color: var(--text-color);
+    margin-right: 10px;
+}
+
+.input-group input {
+    flex: 1;
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 1rem;
+    padding: 5px;
+    color: var(--text-color);
+}
+
+/* Button Styling */
+.login-button {
+    background-color: var(--button-bg-color);
+    color: var(--text-color);
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-button:hover {
+    background-color: var(--button-hover-bg-color);
+}
+
+/* Register Link Styling */
+.register-link {
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+.register-button-link {
+    background: none;
+    border: none;
+    color: var(--link-color);
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: inherit;
+    padding: 0;
+}
+
+.register-button-link:hover {
+    text-decoration: none;
+}

@@ -1,0 +1,87 @@
+/* Define Variables for Light and Dark Themes */
+:root {
+  --background-color-light: #f4f4f4;
+  --text-color-light: #333;
+  --container-bg-color-light: #ffffff;
+  --input-bg-color-light: #f9f9f9;
+  --border-color-light: #ddd;
+  --button-bg-color-light: #007bff;
+  --button-hover-bg-color-light: #0056b3;
+  --link-color-light: #007bff;
+
+  --background-color-dark: #121212;
+  --text-color-dark: #f4f4f4;
+  --container-bg-color-dark: #1e1e1e;
+  --input-bg-color-dark: #333333;
+  --border-color-dark: #444;
+  --button-bg-color-dark: #bb86fc;
+  --button-hover-bg-color-dark: #3700b3;
+  --link-color-dark: #bb86fc;
+}
+
+/* Default Theme Variables */
+[data-theme="light"] {
+  --background-color: var(--background-color-light);
+  --text-color: var(--text-color-light);
+  --container-bg-color: var(--container-bg-color-light);
+  --input-bg-color: var(--input-bg-color-light);
+  --border-color: var(--border-color-light);
+  --button-bg-color: var(--button-bg-color-light);
+  --button-hover-bg-color: var(--button-hover-bg-color-light);
+  --link-color: var(--link-color-light);
+}
+
+[data-theme="dark"] {
+  --background-color: var(--background-color-dark);
+  --text-color: var(--text-color-dark);
+  --container-bg-color: var(--container-bg-color-dark);
+  --input-bg-color: var(--input-bg-color-dark);
+  --border-color: var(--border-color-dark);
+  --button-bg-color: var(--button-bg-color-dark);
+  --button-hover-bg-color: var(--button-hover-bg-color-dark);
+  --link-color: var(--link-color-dark);
+}
+
+/* Global Styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color); /* Theme-based background color */
+  color: var(--text-color); /* Theme-based text color */
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Links */
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Theme Switcher Styling */
+.theme-switcher {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.theme-dropdown {
+  padding: 5px 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  font-size: 0.9rem;
+  background-color: var(--input-bg-color);
+  color: var(--text-color);
+  outline: none;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  appearance: none;
+}
