@@ -1,0 +1,30 @@
+# Node.js
+node_modules/
+npm-debug.log*
+.env
+
+# Logs
+logs/
+*.log
+*.log.*
+
+# React
+frontend/node_modules/
+frontend/build/
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
+
+# OS/IDE Specific
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.idea/
+*.vscode/
+*.history/
+
+# Docker (for future use)
+docker-compose.override.yml
+
