@@ -17,8 +17,8 @@
   --button-bg-color-dark: #bb86fc;
   --button-hover-bg-color-dark: #3700b3;
   --link-color-dark: #bb86fc;
-  --active-card-bg: linear-gradient(135deg, #e3fcec, #b7f7c9);
-  --inactive-card-bg: linear-gradient(135deg, #fde8e8, #f7b7b7);
+  --active-card-bg: #e8f5e9;
+  --inactive-card-bg:  #ffebee;
   --active-border-color: green;
   --inactive-border-color: red;
   --text-color-secondary: #555;
@@ -37,8 +37,6 @@
   --button-bg-color: var(--button-bg-color-light);
   --button-hover-bg-color: var(--button-hover-bg-color-light);
   --link-color: var(--link-color-light);
-  --active-card-bg: linear-gradient(135deg, #e3fcec, #b7f7c9);
-  --inactive-card-bg: linear-gradient(135deg, #fde8e8, #f7b7b7);
 }
 
 [data-theme="dark"] {
@@ -50,8 +48,6 @@
   --button-bg-color: var(--button-bg-color-dark);
   --button-hover-bg-color: var(--button-hover-bg-color-dark);
   --link-color: var(--link-color-dark);
-  --active-card-bg: linear-gradient(135deg, #284b3d, #3a7d55);
-  --inactive-card-bg: linear-gradient(135deg, #552525, #7d3a3a);
 }
 
 /* Global Styling */
