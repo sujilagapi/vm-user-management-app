@@ -27,14 +27,16 @@ function Login() {
         <>
             {/* Theme Switcher */}
             <div className="theme-switcher">
-                <select
-                    value={theme}
-                    onChange={(e) => toggleTheme(e.target.value)}
-                    className="theme-dropdown"
+                <button
+                    className="theme-toggle"
+                    onClick={() => toggleTheme(theme === "light" ? "dark" : "light")}
                 >
-                    <option value="light">Light</option>
-                    <option value="dark">Dark</option>
-                </select>
+                    {theme === "light" ? (
+                        <FaMoon className="theme-icon" />
+                    ) : (
+                        <FaSun className="theme-icon" />
+                    )}
+                </button>
             </div>
 
             {/* Login Form */}

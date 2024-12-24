@@ -66,22 +66,4 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Theme Switcher Styling */
-.theme-switcher {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-}
 
-.theme-dropdown {
-  padding: 5px 10px;
-  border: 1px solid var(--border-color);
-  border-radius: 5px;
-  font-size: 0.9rem;
-  background-color: var(--input-bg-color);
-  color: var(--text-color);
-  outline: none;
-  cursor: pointer;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  appearance: none;
-}
