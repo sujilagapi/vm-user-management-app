@@ -15,6 +15,7 @@ function Login() {
     // Handle login action
     const handleLogin = (e) => {
         e.preventDefault();
+        navigate("/dashboard");
         console.log("Email:", email, "Password:", password); // Simulated login action
     };
 
