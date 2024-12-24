@@ -1,4 +1,3 @@
-// src/components/Register.js
 import React, { useState } from "react";
 import { FaUser, FaEnvelope, FaLock } from "react-icons/fa"; // Icons
 import "./Register.css"; // Import CSS
@@ -16,45 +15,47 @@ function Register() {
     };
 
     return (
-        <div className="register-container">
-            <h1 className="register-title">Register</h1>
-            <form className="register-form" onSubmit={handleRegister}>
-                <div className="input-group">
-                    <FaUser className="icon" />
-                    <input
-                        type="text"
-                        placeholder="User Name"
-                        value={userName}
-                        onChange={(e) => setUserName(e.target.value)}
-                        required
-                    />
-                </div>
-                <div className="input-group">
-                    <FaEnvelope className="icon" />
-                    <input
-                        type="email"
-                        placeholder="Email"
-                        value={email}
-                        onChange={(e) => setEmail(e.target.value)}
-                        required
-                    />
-                </div>
-                <div className="input-group">
-                    <FaLock className="icon" />
-                    <input
-                        type="password"
-                        placeholder="Password"
-                        value={password}
-                        onChange={(e) => setPassword(e.target.value)}
-                        required
-                    />
-                </div>
-                <button type="submit" className="register-button">Register</button>
-            </form>
-            {message && <p className="success-message">{message}</p>}
-            <p className="login-link">
-                Already have an account? <a href="/">Login here</a>
-            </p>
+        <div className="center-container">
+            <div className="register-container">
+                <h1 className="register-title">Register</h1>
+                <form className="register-form" onSubmit={handleRegister}>
+                    <div className="input-group">
+                        <FaUser className="icon" />
+                        <input
+                            type="text"
+                            placeholder="User Name"
+                            value={userName}
+                            onChange={(e) => setUserName(e.target.value)}
+                            required
+                        />
+                    </div>
+                    <div className="input-group">
+                        <FaEnvelope className="icon" />
+                        <input
+                            type="email"
+                            placeholder="Email"
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
+                            required
+                        />
+                    </div>
+                    <div className="input-group">
+                        <FaLock className="icon" />
+                        <input
+                            type="password"
+                            placeholder="Password"
+                            value={password}
+                            onChange={(e) => setPassword(e.target.value)}
+                            required
+                        />
+                    </div>
+                    <button type="submit" className="register-button">Register</button>
+                </form>
+                {message && <p className="success-message">{message}</p>}
+                <p className="login-link">
+                    Already have an account? <a href="/">Login here</a>
+                </p>
+            </div>
         </div>
     );
 }

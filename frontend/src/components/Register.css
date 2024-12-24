@@ -1,11 +1,22 @@
 /* Center the register container */
+.center-container {
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    height: 100vh; /* Full viewport height */
+    width: 100vw; /* Full viewport width */
+    background-color: var(--background-color); /* Theme-based background */
+    box-sizing: border-box; /* Include padding and borders in width/height */
+}
+
+/* Register Container */
 .register-container {
     max-width: 400px;
     width: 100%;
     background: var(--container-bg-color); /* Theme-based container background */
     padding: 20px 30px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: can adjust for dark theme */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 

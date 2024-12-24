@@ -25,7 +25,7 @@ function Login() {
     };
 
     return (
-        <>
+        <div className="center-container">
             {/* Theme Switcher */}
             <div className="theme-switcher">
                 <button
@@ -75,7 +75,7 @@ function Login() {
                     </button>
                 </p>
             </div>
-        </>
+        </div>
     );
 }
 

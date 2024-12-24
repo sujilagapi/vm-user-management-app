@@ -2,16 +2,18 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     background-color: #f5f5f5;
     color: #333;
 }
 
+/* Dashboard Wrapper */
 .dashboard {
     width: 100%;
     height: 100vh;
     display: flex;
     flex-direction: column;
+    padding: 0 90px;
     box-sizing: border-box;
 }
 
@@ -27,7 +29,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     z-index: 1000;
 }
 
@@ -35,6 +37,7 @@ body {
     margin: 0;
     font-size: 24px;
     font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 .header-actions {
@@ -73,12 +76,12 @@ body {
 /* VM Summary */
 .vm-summary {
     display: flex;
-    justify-content: space-around;
-    margin: 80px 0 20px; /* Add spacing for fixed header */
+    justify-content: space-between;
+    margin: 80px 20px 20px; /* Space for the fixed header */
     padding: 15px;
     background-color: white;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .summary-item {
@@ -101,42 +104,42 @@ body {
 .vm-section {
     flex: 1;
     margin: 20px 0;
-    padding: 20px;
-    overflow-y: auto; /* Vertical scrolling for many cards */
+    padding: 0 20px;
+    overflow-y: auto;
 }
 
 .vm-grid {
     display: grid;
-    grid-template-columns: repeat(6, 1fr); /* 6 items per row */
+    grid-template-columns: repeat(6, 1fr);
     gap: 20px;
     width: 100%;
-    justify-content: space-between;
 }
 
 /* VM Card */
 .vm-card {
     background-color: white;
     border-radius: 12px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    font-size: 18px; /* Increased font size for better readability */
+    font-size: 18px;
+    border: 1px solid transparent;
 }
 
 .vm-card.active {
-    border-left: 8px solid green;
-    background-color: #e8f5e9;
+    border: 2px solid green;
+    background: linear-gradient(to bottom right, #e8f5e9, #d4f5d4);
 }
 
 .vm-card.inactive {
-    border-left: 8px solid red;
-    background-color: #ffebee;
+    border: 2px solid red;
+    background: linear-gradient(to bottom right, #ffebee, #fbdada);
 }
 
 .vm-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 .vm-title {
