@@ -4,6 +4,7 @@ import VMList from "./VMList";
 import { ThemeContext } from "../contexts/ThemeContext";
 import "./Dashboard.css";
 import {useNavigate} from "react-router-dom";
+import VMHistory from "./VMHistory";
 
 function Dashboard() {
     const [selected, setSelected] = useState("vms"); // Track selected section
@@ -23,11 +24,9 @@ function Dashboard() {
                         {(() => {
                             switch (activeMenu) {
                                 case 'Virtual Machines':
-                                    return (
-                                        <>
-                                            <VMList/>
-                                        </>
-                                    );
+                                    return (<VMList/>);
+                                case 'History':
+                                    return (<VMHistory/>);
                                 default:
                                     return <p>This is the {activeMenu} section. Content will go here later.</p>;
                             }

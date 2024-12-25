@@ -1,0 +1,87 @@
+/* Container for VMHistory */
+.vm-history-container {
+    display: flex;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+/* Sidebar Styling */
+.vm-sidebar {
+    width: 250px;
+    background-color: var(--secondary-bg-color);
+    color: var(--primary-text-color);
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+}
+
+.vm-sidebar h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.vm-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.vm-list li {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    color: var(--primary-text-color);
+}
+
+.vm-list li.active {
+    background-color: var(--highlight-color);
+    color: #fff;
+}
+
+.vm-list li:hover {
+    background-color: var(--highlight-color-light);
+    color: #fff;
+}
+
+/* History Section Styling */
+.vm-history {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.vm-history h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: var(--primary-text-color);
+}
+
+.history-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.history-item {
+    background-color: var(--secondary-bg-color);
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.history-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.history-item p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: var(--primary-text-color);
+}
