@@ -5,6 +5,7 @@
     color: var(--primary-text-color);
     display: flex;
     flex-direction: column;
+    justify-content: space-between; /* Ensures the bottom buttons stay at the bottom */
     padding: 20px;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
     height: 100vh;
@@ -63,12 +64,13 @@
     color: var(--navigation-link-text-hover-color);
 }
 
-/* Theme and Logout Buttons Wrapper */
+/* Bottom Section for Theme Toggle and Logout */
 .theme-logout-wrapper {
-    margin-top: auto; /* Push the buttons to the bottom of the sidebar */
+    margin-top: auto; /* Push this section to the bottom */
     display: flex;
     flex-direction: column;
-    gap: 10px; /* Space between theme toggle and logout */
+    gap: 10px; /* Add space between theme toggle and logout */
+    align-items: stretch; /* Ensure buttons stretch full width */
 }
 
 /* Theme Toggle Button */
