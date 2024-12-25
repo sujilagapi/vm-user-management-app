@@ -5,74 +5,125 @@
   box-sizing: border-box;
 }
 :root {
-  --background-color-light: #f4f4f4;
-  --text-color-light: #333;
-  --container-bg-color-light: #ffffff;
-  --input-bg-color-light: #f9f9f9;
-  --border-color-light: #ddd;
-  --button-bg-color-light: #007bff;
-  --button-hover-bg-color-light: #0056b3;
-  --link-color-light: #007bff;
-
-  --background-color-dark: #121212;
-  --text-color-dark: #f4f4f4;
-  --container-bg-color-dark: #1e1e1e;
-  --input-bg-color-dark: #333333;
-  --border-color-dark: #444;
-  --button-bg-color-dark: #bb86fc;
-  --button-hover-bg-color-dark: #3700b3;
-  --link-color-dark: #bb86fc;
-  --active-card-bg: #e8f5e9;
-  --inactive-card-bg:  #ffebee;
-  --active-border-color: green;
-  --inactive-border-color: red;
-  --text-color-secondary: #555;
-  --text-muted-color: #777;
-  --logout-button-color : #ff4d4f;
-  --logout-text-color : white;
+  --primary-bg-color: #ffffff; /* Default white background */
+  --secondary-bg-color: #f8f9fa; /* Light gray background */
+  --primary-text-color: #333333; /* Dark text color */
+  --secondary-text-color: #969696; /* Subtle gray text */
+  --highlight-color: #007bff; /* Blue for highlights */
+  --highlight-color-light: #80caff; /* Light Blue for hover or lighter areas */
+  --error-color: #dc3545; /* Red for errors */
+  --hover-bg-color: #0056b3; /* Darker blue for hover */
+  --hover-text-color: #ffffff; /* Hover text color */
+  --accent-color: #007bff; /* Main accent color for buttons/links */
+  --input-bg-color: #ffffff; /* Input background color */
+  --input-border-color: #ccc; /* Input border color */
+  --input-focus-border-color: #007bff; /* Input focus border */
+  --button-bg-color: #007bff; /* Blue background for buttons */
+  --button-hover-bg-color: #0056b3; /* Darker blue for button hover */
+  --active-card-bg: #e6f7e6; /* Light green background for active cards */
+  --active-border-color: #28a745; /* Green border for active cards */
+  --inactive-card-bg: #fce8e8; /* Light red background for inactive cards */
+  --inactive-border-color: #dc3545; /* Red border for inactive cards */
 }
 
 /* Default Theme Variables */
 [data-theme="light"] {
-  --background-color: var(--background-color-light);
-  --text-color: var(--text-color-light);
-  --container-bg-color: var(--container-bg-color-light);
-  --input-bg-color: var(--input-bg-color-light);
-  --border-color: var(--border-color-light);
-  --button-bg-color: var(--button-bg-color-light);
-  --button-hover-bg-color: var(--button-hover-bg-color-light);
-  --link-color: var(--link-color-light);
+  --primary-bg-color: #ffffff; /* Default white background */
+  --secondary-bg-color: #f8f9fa; /* Light gray background */
+  --primary-text-color: #333333; /* Dark text color */
+  --secondary-text-color: #969696; /* Subtle gray text */
+  --highlight-color: #007bff; /* Blue for highlights */
+  --highlight-color-light: #80caff; /* Light Blue for hover or lighter areas */
+  --error-color: #dc3545; /* Red for errors */
+  --hover-bg-color: #0056b3; /* Darker blue for hover */
+  --hover-text-color: #ffffff; /* Hover text color */
+  --accent-color: #007bff; /* Main accent color for buttons/links */
+  --input-bg-color: #ffffff; /* Input background color */
+  --input-border-color: #ccc; /* Input border color */
+  --input-focus-border-color: #007bff; /* Input focus border */
+  --button-bg-color: #007bff; /* Blue background for buttons */
+  --button-hover-bg-color: #0056b3; /* Darker blue for button hover */
+  --active-card-bg: #e6f7e6; /* Light green background for active cards */
+  --active-border-color: #28a745; /* Green border for active cards */
+  --inactive-card-bg: #fce8e8; /* Light red background for inactive cards */
+  --inactive-border-color: #dc3545; /* Red border for inactive cards */
 }
 
 [data-theme="dark"] {
-  --background-color: var(--background-color-dark);
-  --text-color: var(--text-color-dark);
-  --container-bg-color: var(--container-bg-color-dark);
-  --input-bg-color: var(--input-bg-color-dark);
-  --border-color: var(--border-color-dark);
-  --button-bg-color: var(--button-bg-color-dark);
-  --button-hover-bg-color: var(--button-hover-bg-color-dark);
-  --link-color: var(--link-color-dark);
+  --primary-bg-color: #1e1e2f; /* Dark background */
+  --secondary-bg-color: #2a2a40; /* Slightly lighter dark gray for contrast */
+  --primary-text-color: #ffffff; /* Light text color for readability */
+  --secondary-text-color: #b3b3b3; /* Subtle gray for secondary text */
+  --highlight-color: #4f83ff; /* Bright blue for highlights */
+  --highlight-color-light: #8fbaff; /* Softer blue for hover or lighter areas */
+  --error-color: #ff6b6b; /* Bright red for errors */
+  --hover-bg-color: #3a3a5b; /* Darker gray-blue for hover */
+  --hover-text-color: #ffffff; /* Hover text remains white */
+  --accent-color: #4f83ff; /* Main accent color for buttons/links */
+  --input-bg-color: #2a2a40; /* Dark input background */
+  --input-border-color: #444; /* Darker input border color */
+  --input-focus-border-color: #4f83ff; /* Blue input focus border */
+  --button-bg-color: #4f83ff; /* Bright blue for buttons */
+  --button-hover-bg-color: #3a5bb5; /* Darker blue for button hover */
+  --active-card-bg: #2d4a2d; /* Dark green background for active cards */
+  --active-border-color: #57d057; /* Bright green border for active cards */
+  --inactive-card-bg: #4a2d2d; /* Dark red background for inactive cards */
+  --inactive-border-color: #ff6b6b; /* Bright red border for inactive cards */
 }
 
 /* Global Styling */
 /* Global Styling */
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: var(--background-color); /* Theme-based background color */
-  color: var(--text-color); /* Theme-based text color */
-  /*height: 100vh;*/
-  /*width: 100%;*/
+  background-color: var(--primary-bg-color); /* Theme-based background color */
+  color: var(--primary-text-color); /* Theme-based text color */
 }
 
 /* Links */
 a {
-  color: var(--link-color);
+  color: var(--primary-text-color);
   text-decoration: none;
 }
 
 a:hover {
   text-decoration: underline;
 }
+/* Input Group Styling */
+.input-group {
+  display: flex;
+  align-items: center;
+  background: var(--input-bg-color);
+  border: 1px solid var(--primary-text-color);
+  border-radius: 5px;
+  padding: 10px;
+}
 
+.input-group .icon {
+  font-size: 1.2rem;
+  color: var(--secondary-text-color);
+  margin-right: 10px;
+}
+
+.input-group input {
+  flex: 1;
+  border: none;
+  background: none;
+  outline: none;
+  font-size: 1rem;
+  padding: 5px;
+  color: var(--primary-text-color);
+}
+
+/* Button Styling */
+.login-button {
+  background-color: var(--button-bg-color);
+  color: var(--primary-text-color);
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
 
