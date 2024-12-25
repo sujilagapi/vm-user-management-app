@@ -1,21 +1,3 @@
-/*!* General body and HTML setup to allow scrolling *!*/
-/*body, html {*/
-/*    margin: 0;*/
-/*    padding: 0;*/
-/*    height: 100%;*/
-/*    overflow-y: auto; !* Ensure the body is scrollable *!*/
-/*}*/
-
-/*!* Page wrapper to ensure proper layout *!*/
-/*.page-wrapper {*/
-/*    display: flex;*/
-/*    flex-direction: column;*/
-/*    min-height: 100vh; !* Make sure it spans the full viewport height *!*/
-/*    overflow: hidden; !* Prevent unnecessary horizontal scroll *!*/
-/*}*/
-
-/* Container for the VM List */
-/* Container for the VM List */
 /* Container for the VM List */
 .vm-container {
     padding: 20px;
@@ -46,7 +28,7 @@
     overflow-y: auto; /* Make the grid scrollable */
     padding: 0 10px; /* Add padding inside the grid */
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Responsive cards */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 600px)); /* Responsive cards */
     gap: 20px;
     width: 100%;
     box-sizing: border-box; /* Ensure padding doesn't affect width */
@@ -144,4 +126,50 @@
     background-color: #0056b3;
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Statistics Section Below Header */
+/* Statistics Section Below Header */
+.vm-stats {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between boxes */
+    margin-top: 10px; /* Spacing below the header */
+    margin-bottom: 20px; /* Spacing before the grid */
+}
+
+/* Each Statistics Box */
+.vm-stat-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--secondary-bg-color);
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    min-width: 120px; /* Ensures consistent box size */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Box Hover Effect */
+.vm-stat-box:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Title Inside the Box */
+.vm-stat-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--primary-text-color);
+    margin-bottom: 5px;
+}
+
+/* Value Inside the Box */
+.vm-stat-value {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--highlight-color);
 }

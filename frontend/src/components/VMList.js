@@ -26,10 +26,23 @@ function VMList() {
     ];
 
 
+    const freeCount = vms.filter(vm => vm.status === "Free").length;
+    const usedCount = vms.filter(vm => vm.status === "Occupied").length;
+
     return (
         <div className="vm-container">
             <div className="vm-header">
                 <h3>Virtual Machines</h3>
+                <div className="vm-stats">
+                    <div className="vm-stat-box">
+                        <span className="vm-stat-title">Available</span>
+                        <span className="vm-stat-value">{freeCount}</span>
+                    </div>
+                    <div className="vm-stat-box">
+                        <span className="vm-stat-title">Used</span>
+                        <span className="vm-stat-value">{usedCount}</span>
+                    </div>
+                </div>
             </div>
             <div className="vm-grid">
                 {vms.map((vm) => (
@@ -39,6 +52,12 @@ function VMList() {
                         <p className="vm-status">
                             Status: <strong>{vm.status}</strong>
                         </p>
+                        <p className="vm-instance">
+                            Instance: <strong>{vm.instance}</strong>
+                        </p>
+                        <p className="vm-connection">
+                            Connection: <strong>{vm.connection}</strong>
+                        </p>
                         {vm.status === "Free" && (
                             <button className="vm-use-button">Use</button>
                         )}
@@ -47,12 +66,6 @@ function VMList() {
                                 In Use By: <strong>{vm.user}</strong>
                             </p>
                         )}
-                        <p className="vm-instance">
-                            Instance: <strong>{vm.instance}</strong>
-                        </p>
-                        <p className="vm-connection">
-                            Connection: <strong>{vm.connection}</strong>
-                        </p>
                     </div>
                 ))}
             </div>
