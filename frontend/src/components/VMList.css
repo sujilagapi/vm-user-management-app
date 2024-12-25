@@ -1,0 +1,71 @@
+/* Container for the VM List */
+.vm-container {
+    padding: 20px;
+    margin-top: 10px; /* Adjust spacing to move the section upwards */
+    background-color: var(--background-color);
+}
+
+/* Header for Virtual Machines Section */
+.vm-header h3 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--text-color);
+    margin-bottom: 20px; /* Spacing between header and grid */
+    text-align: center; /* Center align the header */
+}
+
+/* Grid Layout for VM Cards */
+.vm-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Individual VM Card Styling */
+.vm-card {
+    background-color: var(--container-bg-color);
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid transparent;
+}
+
+.vm-card.active {
+    border: 2px solid var(--active-border-color);
+    background: var(--active-card-bg);
+}
+
+.vm-card.inactive {
+    border: 2px solid var(--inactive-border-color);
+    background: var(--inactive-card-bg);
+}
+
+.vm-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Text in VM Cards */
+.vm-title {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.vm-status {
+    margin: 10px 0;
+    font-size: 16px;
+    color: var(--text-color-secondary);
+}
+
+.vm-user {
+    font-size: 14px;
+    color: var(--text-muted-color);
+    margin-top: 10px;
+}

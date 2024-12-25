@@ -1,4 +1,9 @@
 /* Define Variables for Light and Dark Themes */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 :root {
   --background-color-light: #f4f4f4;
   --text-color-light: #333;
@@ -54,12 +59,10 @@
 /* Global Styling */
 body {
   font-family: 'Poppins', sans-serif;
-  margin: 0;
-  padding: 0;
   background-color: var(--background-color); /* Theme-based background color */
   color: var(--text-color); /* Theme-based text color */
-  height: 100vh;
-  width: 100%;
+  /*height: 100vh;*/
+  /*width: 100%;*/
 }
 
 /* Links */
