@@ -17,7 +17,7 @@
 /* Grid Layout for VM Cards */
 .vm-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Bigger cards */
     gap: 20px;
     justify-content: center;
 }
@@ -28,43 +28,76 @@
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    text-align: center;
     font-size: 18px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border: 1px solid transparent;
+    border: 2px solid transparent;
+    position: relative; /* To position the top-right icon */
 }
 
-.vm-card.active {
-    border: 2px solid var(--active-border-color);
-    background: var(--active-card-bg);
+/* Status-Based Coloring */
+.vm-card.free {
+    border-color: #28a745; /* Green for Free */
+    background-color: #e6f7e6; /* Light Green */
+}
+
+.vm-card.occupied {
+    border-color: #ffc107; /* Yellow for Occupied */
+    background-color: #fff8e1; /* Light Yellow */
 }
 
 .vm-card.inactive {
-    border: 2px solid var(--inactive-border-color);
-    background: var(--inactive-card-bg);
+    border-color: #dc3545; /* Red for Inactive */
+    background-color: #f8d7da; /* Light Red */
 }
 
-.vm-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+/* Top-right Icon */
+.vm-card .vm-icon {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 24px;
+    color: var(--secondary-text-color);
 }
 
-/* Text in VM Cards */
+/* Status and Name */
 .vm-title {
-    margin: 0;
     font-size: 20px;
     font-weight: bold;
     color: var(--primary-text-color);
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
 }
 
 .vm-status {
     margin: 10px 0;
-    font-size: 16px;
+    font-size: 18px;
+    font-weight: bold;
     color: var(--secondary-text-color);
 }
 
-.vm-user {
-    font-size: 14px;
+/* User and VM Details */
+.vm-user,
+.vm-instance,
+.vm-connection {
+    font-size: 16px;
     color: var(--primary-text-color);
-    margin-top: 10px;
+    margin: 5px 0;
+}
+
+/* Button for Free Status */
+.vm-use-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff; /* Blue button */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.vm-use-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
 }

@@ -59,8 +59,8 @@
   --inactive-card-bg: #fce8e8; /* Light red background for inactive cards */
   --inactive-border-color: #dc3545; /* Red border for inactive cards */
   --navigation-link-bg-normal-color: #ffffff; /* White background for normal links */
-  --navigation-link-bg-selected-color: #e6f7ff; /* Light blue for selected links */
-  --navigation-link-bg-hover-color: #d9f0ff; /* Softer blue for hover state */
+  --navigation-link-bg-selected-color: #9adcf8; /* Light blue for selected links */
+  --navigation-link-bg-hover-color: #a6d6f3; /* Softer blue for hover state */
 
   --navigation-link-text-normal-color: #333333; /* Dark gray text for normal links */
   --navigation-link-text-selected-color: #007bff; /* Blue text for selected links */

@@ -8,7 +8,7 @@ import {useNavigate} from "react-router-dom";
 function Dashboard() {
     const [selected, setSelected] = useState("vms"); // Track selected section
     const { theme, toggleTheme } = useContext(ThemeContext);
-    const [activeMenu, setActiveMenu] = useState('VMs');
+    const [activeMenu, setActiveMenu] = useState('Virtual Machines');
     const navigate = useNavigate();
 
     const handleMenuClick = (menu) => setActiveMenu(menu);
