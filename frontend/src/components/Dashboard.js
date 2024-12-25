@@ -22,7 +22,7 @@ function Dashboard() {
                     <div className="content-container">
                         {(() => {
                             switch (activeMenu) {
-                                case 'VMs':
+                                case 'Virtual Machines':
                                     return (
                                         <>
                                             <VMList/>

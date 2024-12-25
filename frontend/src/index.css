@@ -1,4 +1,5 @@
 /* Define Variables for Light and Dark Themes */
+@import '@fortawesome/fontawesome-free/css/all.css';
 * {
   margin: 0;
   padding: 0;
@@ -18,12 +19,22 @@
   --input-bg-color: #ffffff; /* Input background color */
   --input-border-color: #ccc; /* Input border color */
   --input-focus-border-color: #007bff; /* Input focus border */
+
+
   --button-bg-color: #007bff; /* Blue background for buttons */
   --button-hover-bg-color: #0056b3; /* Darker blue for button hover */
+
   --active-card-bg: #e6f7e6; /* Light green background for active cards */
   --active-border-color: #28a745; /* Green border for active cards */
   --inactive-card-bg: #fce8e8; /* Light red background for inactive cards */
   --inactive-border-color: #dc3545; /* Red border for inactive cards */
+  --navigation-link-bg-normal-color: #ffffff; /* White background for normal links */
+  --navigation-link-bg-selected-color: #e6f7ff; /* Light blue for selected links */
+  --navigation-link-bg-hover-color: #d9f0ff; /* Softer blue for hover state */
+
+  --navigation-link-text-normal-color: #333333; /* Dark gray text for normal links */
+  --navigation-link-text-selected-color: #007bff; /* Blue text for selected links */
+  --navigation-link-text-hover-color: #0056b3; /* Darker blue for hover state */
 }
 
 /* Default Theme Variables */
@@ -47,6 +58,13 @@
   --active-border-color: #28a745; /* Green border for active cards */
   --inactive-card-bg: #fce8e8; /* Light red background for inactive cards */
   --inactive-border-color: #dc3545; /* Red border for inactive cards */
+  --navigation-link-bg-normal-color: #ffffff; /* White background for normal links */
+  --navigation-link-bg-selected-color: #e6f7ff; /* Light blue for selected links */
+  --navigation-link-bg-hover-color: #d9f0ff; /* Softer blue for hover state */
+
+  --navigation-link-text-normal-color: #333333; /* Dark gray text for normal links */
+  --navigation-link-text-selected-color: #007bff; /* Blue text for selected links */
+  --navigation-link-text-hover-color: #0056b3; /* Darker blue for hover state */
 }
 
 [data-theme="dark"] {
@@ -69,6 +87,13 @@
   --active-border-color: #57d057; /* Bright green border for active cards */
   --inactive-card-bg: #4a2d2d; /* Dark red background for inactive cards */
   --inactive-border-color: #ff6b6b; /* Bright red border for inactive cards */
+  --navigation-link-bg-normal-color: #2a2a40; /* Dark background for normal links */
+  --navigation-link-bg-selected-color: #4f5b6b; /* Muted blue-gray for selected links */
+  --navigation-link-bg-hover-color: #3a4757; /* Slightly brighter blue-gray for hover state */
+
+  --navigation-link-text-normal-color: #b3b3b3; /* Subtle gray text for normal links */
+  --navigation-link-text-selected-color: #4f83ff; /* Bright blue for selected links */
+  --navigation-link-text-hover-color: #80caff; /* Lighter blue for hover state */
 }
 
 /* Global Styling */
