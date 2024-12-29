@@ -1,0 +1,147 @@
+/*!* General body and HTML setup to allow scrolling *!*/
+/*body, html {*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*    height: 100%;*/
+/*    overflow-y: auto; !* Ensure the body is scrollable *!*/
+/*}*/
+
+/*!* Page wrapper to ensure proper layout *!*/
+/*.page-wrapper {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    min-height: 100vh; !* Make sure it spans the full viewport height *!*/
+/*    overflow: hidden; !* Prevent unnecessary horizontal scroll *!*/
+/*}*/
+
+/* Container for the VM List */
+/* Container for the VM List */
+/* Container for the VM List */
+.vm-container {
+    padding: 20px;
+    background-color: var(--primary-bg-color);
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Make the container occupy the full viewport height */
+    box-sizing: border-box;
+}
+
+/* Header for Virtual Machines Section */
+.vm-header {
+    flex-shrink: 0; /* Ensure the header doesn't shrink */
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.vm-header h3 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--primary-text-color);
+}
+
+/* Scrollable Grid View */
+.vm-grid {
+    flex: 1; /* Allow the grid to take all remaining space */
+    overflow-y: auto; /* Make the grid scrollable */
+    padding: 0 10px; /* Add padding inside the grid */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Responsive cards */
+    gap: 20px;
+    width: 100%;
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+/* Individual VM Card Styling */
+.vm-card {
+    background-color: var(--secondary-bg-color);
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    font-size: 18px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    border: 2px solid transparent;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 250px;
+}
+
+/* Status-Based Coloring */
+.vm-card.free {
+    border-color: #28a745; /* Green for Free */
+    background-color: #e6f7e6; /* Light Green */
+}
+
+.vm-card.occupied {
+    border-color: #ffc107; /* Yellow for Occupied */
+    background-color: #fff8e1; /* Light Yellow */
+}
+
+.vm-card.inactive {
+    border-color: #dc3545; /* Red for Inactive */
+    background-color: #f8d7da; /* Light Red */
+}
+
+/* Top-right Icon */
+.vm-card .vm-icon {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 28px;
+    color: var(--secondary-text-color);
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.vm-card:hover .vm-icon {
+    opacity: 1; /* Full opacity on hover */
+}
+
+/* Status and Name */
+.vm-title {
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--primary-text-color);
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.vm-status {
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--secondary-text-color);
+}
+
+/* User and VM Details */
+.vm-user,
+.vm-instance,
+.vm-connection {
+    font-size: 16px;
+    color: var(--primary-text-color);
+    margin: 5px 0;
+}
+
+/* Button for Free Status */
+.vm-use-button {
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+.vm-use-button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

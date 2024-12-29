@@ -1,0 +1,32 @@
+.home-layout {
+    display: flex;
+    height: 100vh;
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: var(--primary-bg-color); /* Dynamic background color */
+    color: var(--primary-text-color); /* Dynamic text color */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions for themes */
+}
+
+.main-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--secondary-bg-color); /* Dynamic secondary background color */
+    border-radius: 10px;
+    margin: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: overlay;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.content-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background-color: var(--secondary-bg-color); /* Dynamic primary background color */
+    color: var(--primary-text-color); /* Dynamic text color */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex-grow: 1;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}

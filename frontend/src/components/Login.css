@@ -1,0 +1,86 @@
+/* Center the login container */
+.center-container {
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    height: 100vh; /* Full viewport height */
+    width: 100vw; /* Full viewport width */
+    background-color: var(--primary-bg-color); /* Theme-based background */
+    box-sizing: border-box; /* Include padding and borders in width/height */
+}
+
+/* Login Container */
+.login-container {
+    max-width: 400px;
+    width: 100%;
+    background: var(--secondary-bg-color); /* Theme-based container background */
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Title Styling */
+.login-title {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* Form Styling */
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+
+.login-button:hover {
+    background-color: var(--button-hover-bg-color);
+}
+
+/* Register Link Styling */
+.register-link {
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+.register-button-link {
+    background: none;
+    border: none;
+    color: var(--primary-text-color);
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: inherit;
+    padding: 0;
+}
+
+.register-button-link:hover {
+    text-decoration: none;
+}
+
+/* Theme Switcher Styling */
+.theme-switcher {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.theme-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: var(--primary-text-color); /* Theme-based text color */
+    outline: none;
+    transition: transform 0.3s ease;
+}
+
+.theme-toggle:hover {
+    transform: scale(1.2); /* Slight zoom on hover */
+}
+
+.theme-icon {
+    vertical-align: middle;
+}
